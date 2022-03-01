@@ -1,0 +1,40 @@
+@media only screen and (max-width: 500px) {
+  header h1,
+  header .btn-group {
+    margin-left: 18px;
+    margin-right: 18px;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  .weather-cards {
+    flex-direction: column;
+    height: 50vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+
+  .weather-card {
+    min-width: none;
+    width: 97%;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  header h1 {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-height: 500px) {
+  .btn-group {
+    top: 0px;
+    right: 0px;
+  }
+
+  .bg-toggle {
+    width: 35px;
+  }
+}

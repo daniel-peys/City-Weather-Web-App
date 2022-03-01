@@ -1,0 +1,137 @@
+body {
+  transition: transform 0.3s ease-out;
+  height: 0px;
+  transform: scale(0);
+}
+
+/* Grid layout */
+
+.grid-template {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.col {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.col:not(:first-child) {
+  flex-direction: column;
+}
+
+/* Icon Box */
+
+.grid-template-icon {
+  display: grid;
+  grid-template-columns: repeat(2, 250px);
+  width: fit-content;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  border-radius: 15px;
+  padding: 10px;
+  margin-top: 25px;
+  background-color: var(--col-font-light);
+}
+
+.col-icon {
+  width: 100%;
+}
+
+.col-icon:nth-child(3) {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.grid-col-span-2 {
+  grid-column: span 2;
+  display: flex;
+  justify-content: space-around;
+}
+
+.icon-box {
+  display: flex;
+  padding: 15px;
+}
+
+.grid-template-icon h1 {
+  letter-spacing: 0.1rem;
+  margin-bottom: 10px;
+}
+
+.sun-box {
+  margin-top: 10px;
+}
+
+/* Tables */
+
+.table-small {
+  display: none;
+}
+
+.table-big {
+  min-width: 400px;
+  text-align: center;
+}
+
+.table-big,
+.table-small {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+thead tr {
+  background-color: var(--bg-toggle);
+  color: #ffffff;
+  text-align: left;
+}
+
+.table-big tbody td:first-child,
+.table-small tbody td:first-child {
+  background-color: var(--bg-table-col);
+  color: white;
+}
+
+tbody td:not(:first-child) {
+  background-color: whitesmoke;
+}
+
+.table-big tbody tr:not(:first-child) td:not(:first-child) {
+  border-top: 0.5px solid grey;
+}
+
+.table-small tbody td:not(:first-child) {
+  text-align: center;
+}
+
+th,
+td {
+  padding: 12px 15px;
+}
+
+/* Image box */
+
+.col:first-child {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.img-box img {
+  margin-top: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}

@@ -1,0 +1,158 @@
+/* Weather Cards */
+
+.weather-cards-wrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.weather-cards {
+  height: fit-content;
+  max-width: 90%;
+  display: flex;
+  overflow-x: scroll;
+}
+
+.weather-card {
+  background-color: white;
+  min-width: 300px;
+  width: 400px;
+  margin: 5px;
+  border-radius: 5px;
+  transition: 0.2s ease-out;
+}
+
+.weather-card:hover {
+  cursor: pointer;
+  transform: scale(0.97);
+}
+
+.weather-card img:not(.icon) {
+  width: 100%;
+  height: 200px;
+  object-fit: fill;
+  border-radius: 5px 5px 0 0;
+}
+
+.weather-card h4 {
+  width: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.grid-template {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+.col:first-child {
+  align-items: center;
+  margin-left: 15px;
+}
+
+.col:not(:first-child) {
+  align-items: flex-end;
+  margin-left: 10px;
+}
+
+.icon-box {
+  display: flex;
+  font-size: 1.2rem;
+  width: 100px;
+  margin-top: 20px;
+}
+
+.icon-box:not(:first-child) {
+  margin-bottom: 20px;
+}
+
+.temperature {
+  position: relative;
+  bottom: 2.5px;
+}
+
+/* Weather-cards scrollbar */
+
+.weather-cards::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+.weather-cards::-webkit-scrollbar-track {
+  background: var(--col-font-light);
+  border-radius: 15px;
+}
+
+/* Handle */
+.weather-cards::-webkit-scrollbar-thumb {
+  background: var(--bg-toggle-btn);
+  border-radius: 20px;
+  border: 2px solid var(--col-font-light);
+}
+
+/* Handle on hover */
+.weather-cards::-webkit-scrollbar-thumb:hover {
+  background: gray;
+}
+
+/* Error Message */
+
+.error-msg {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  background-color: white;
+  width: 50%;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 232, 127);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.error-msg h3 {
+  margin-top: 15px;
+}
+
+.error-msg p {
+  width: 65%;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.error-msg button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  height: 15px;
+  width: 15px;
+  background-color: var(--bg-toggle);
+  color: white;
+  border-radius: 50%;
+  border: none;
+  font-size: 0.5rem;
+}
+
+.error-msg button:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}

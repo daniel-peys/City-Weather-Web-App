@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/shared.css" />
+    <link rel="stylesheet" href="./css/configuration.css" />
+    <link rel="stylesheet" href="./css/configuration-queries.css" />
+    <title>Weather | Configuration</title>
+  </head>
+  <body>
+    <img src="./images/welcome-sun.png" alt="" class="welcome-sun" />
+    <div class="form-group">
+      <h1>CREATE YOUR WEATHER WHATCHLIST</h1>
+      <form action="./app.html" onkeypress="return event.key != 'Enter';">
+        <div class="input-groups">
+          <div class="input-group">
+            <label for="city">CITY: </label>
+            <input
+              type="text"
+              placeholder="Press enter to add city..."
+              data-triggered=""
+            />
+          </div>
+        </div>
+        <input type="text" name="cityNames" value="" hidden />
+        <button type="submit">CREATE</button>
+      </form>
+    </div>
+    <div class="welcome-screen">
+      <img src="./images/welcome-cloud.png" alt="" class="welcome-cloud" />
+      <h1>Click Me!</h1>
+    </div>
+  </body>
+  <script src="./js/configuration-anim.js"></script>
+  <script src="./js/configuration-form.js"></script>
+</html>

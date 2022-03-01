@@ -1,0 +1,49 @@
+@media only screen and (max-width: 950px) {
+  .form-group {
+    width: 80%;
+    margin-top: 30vh;
+  }
+
+  body {
+    align-items: baseline;
+  }
+
+  .animated {
+    transform: translate(-50%, 0) !important;
+    width: 80% !important;
+    height: 700px !important;
+    left: 50% !important;
+    top: -490px !important;
+  }
+}
+
+@media only screen and (max-width: 550px) and (min-height: 600px) {
+  :root {
+    font-size: 12px;
+  }
+
+  body {
+    overflow: hidden;
+    align-items: baseline;
+  }
+
+  .welcome-sun {
+    top: -360px !important;
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  :root {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (min-width: 950px) {
+  .animated {
+    transform: translate(0, 0) !important;
+    width: 70% !important;
+    height: auto !important;
+    left: -30% !important;
+    top: 0 !important;
+  }
+}

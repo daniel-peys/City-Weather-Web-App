@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/shared.css" />
+    <link rel="stylesheet" href="./css/city.css" />
+    <link rel="stylesheet" href="./css/city-queries.css" />
+    <title>Weather | Your City</title>
+  </head>
+  <body>
+    <div class="btn-group">
+      <p>°C/°F</p>
+      <div class="bg-toggle temp-unit">
+        <div class="toggle" id="city-btn"></div>
+      </div>
+    </div>
+    <div class="grid-template">
+      <div class="col">
+        <div class="img-box">
+          <div class="text-box">
+            <h1>Berlin</h1>
+            <h1 class="temp-td" id="header"><span>23</span> °C</h1>
+          </div>
+          <img src="" alt="picture of a city" />
+        </div>
+      </div>
+      <div class="col">
+        <table class="table-big">
+          <thead>
+            <tr>
+              <td>Temperature</td>
+              <td class="temp-day">Monday</td>
+              <td class="temp-day">Tuesday</td>
+              <td class="temp-day">Wednesday</td>
+              <td class="temp-day">Thursday</td>
+              <td class="temp-day">Friday</td>
+              <td class="temp-day">Saturday</td>
+              <td class="temp-day">Sunday</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Actual</td>
+              <td class="temp-td"><span>23</span> °C</td>
+              <td class="temp-td"><span>23</span> °C</td>
+              <td class="temp-td"><span>23</span> °C</td>
+              <td class="temp-td"><span>23</span> °C</td>
+              <td class="temp-td"><span>23</span> °C</td>
+              <td class="temp-td"><span>23</span> °C</td>
+              <td class="temp-td"><span>23</span> °C</td>
+            </tr>
+            <tr>
+              <td>Feeled</td>
+              <td class="temp-td"><span>23</span> °C</td>
+              <td class="temp-td"><span>23</span> °C</td>
+              <td class="temp-td"><span>23</span> °C</td>
+              <td class="temp-td"><span>23</span> °C</td>
+              <td class="temp-td"><span>23</span> °C</td>
+              <td class="temp-td"><span>23</span> °C</td>
+              <td class="temp-td"><span>23</span> °C</td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="table-small">
+          <thead>
+            <tr>
+              <td>Day</td>
+              <td>Temperature</td>
+              <td>Feeled Temperature</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="temp-day">Monday</td>
+              <td class="temp-td temp-small"><span>23</span> °C</td>
+              <td class="temp-td temp-small"><span>23</span> °C</td>
+            </tr>
+            <tr>
+              <td class="temp-day">Tuesday</td>
+              <td class="temp-td temp-small"><span>23</span> °C</td>
+              <td class="temp-td temp-small"><span>23</span> °C</td>
+            </tr>
+            <tr>
+              <td class="temp-day">Wednesday</td>
+              <td class="temp-td temp-small"><span>23</span> °C</td>
+              <td class="temp-td temp-small"><span>23</span> °C</td>
+            </tr>
+            <tr>
+              <td class="temp-day">Thursday</td>
+              <td class="temp-td temp-small"><span>23</span> °C</td>
+              <td class="temp-td temp-small"><span>23</span> °C</td>
+            </tr>
+            <tr>
+              <td class="temp-day">Friday</td>
+              <td class="temp-td temp-small"><span>23</span> °C</td>
+              <td class="temp-td temp-small"><span>23</span> °C</td>
+            </tr>
+            <tr>
+              <td class="temp-day">Saturday</td>
+              <td class="temp-td temp-small"><span>23</span> °C</td>
+              <td class="temp-td temp-small"><span>23</span> °C</td>
+            </tr>
+            <tr>
+              <td class="temp-day">Sunday</td>
+              <td class="temp-td temp-small"><span>23</span> °C</td>
+              <td class="temp-td temp-small"><span>23</span> °C</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="grid-template-icon">
+          <div class="grid-col-span-2">
+            <h1>TODAY</h1>
+          </div>
+          <div class="col-icon">
+            <div class="icon-box weather">
+              <p>Weather</p>
+              <img
+                src="./images/Icons/clouds.svg"
+                alt="weather logo"
+                class="icon"
+              />
+            </div>
+            <div class="icon-box wind-speed">
+              <p>Wind Speed</p>
+              <img
+                src="./images/Icons/windSpeed.svg"
+                alt="wind speed logo"
+                class="icon"
+              />
+            </div>
+          </div>
+          <div class="col-icon">
+            <div class="icon-box description">
+              <p>Raining</p>
+            </div>
+            <div class="icon-box humidity">
+              <p>25</p>
+              <img
+                src="./images/Icons/humidity.svg"
+                alt="wind speed logo"
+                class="icon"
+              />
+            </div>
+          </div>
+          <div class="grid-col-span-2 .sun-box">
+            <div class="icon-box sun">
+              <p>Sunrise</p>
+              <img
+                src="./images/Icons/sunrise.svg"
+                alt="sunrise logo"
+                class="icon"
+              />
+            </div>
+            <div class="icon-box sun">
+              <p>Sunset</p>
+              <img
+                src="./images/Icons/sunset.svg"
+                alt="sunset logo"
+                class="icon"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./js/city.js" type="module"></script>
+  <script src="./js/toggle-btn.js" type="module"></script>
+</html>

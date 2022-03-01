@@ -1,0 +1,152 @@
+/* Welcome Screen Animation */
+
+html {
+  background-color: rgb(22, 22, 22);
+  transition: background-color 1s ease-out;
+  overflow-x: hidden;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.welcome-screen {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.welcome-screen h1 {
+  position: absolute;
+  font-size: 2.5rem;
+  letter-spacing: 0.3rem;
+  color: var(--col-font-light);
+  animation: fontJump linear 1.25s infinite;
+  transition: transform 0.2s linear;
+  z-index: 2;
+}
+
+.welcome-cloud {
+  width: 65%;
+  height: 70%;
+  transition: transform 1s ease-out;
+  z-index: 2;
+  object-fit: contain;
+  border: solid yello;
+}
+
+.welcome-sun {
+  width: 30%;
+  height: 50%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: contain;
+  transition: 1s ease-out;
+  z-index: -1;
+}
+
+@keyframes fontJump {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(0.85);
+  }
+  75% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Configuration Form */
+
+.form-group {
+  width: 45%;
+  margin-right: 9%;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  scrollbar-width: 0px;
+  transition: transform 0.6s ease-out;
+  transform: translateX(120%);
+  display: none;
+}
+
+.form-group button {
+  height: 30px;
+  width: 60px;
+  margin: 40px 0px 45px 0;
+  background-color: transparent;
+  border: solid 1px;
+  font-weight: bold;
+}
+
+.form-group button:hover {
+  background-color: var(--bg-btn-hover);
+  cursor: pointer;
+}
+
+.form-group h1 {
+  font-size: 1.5rem;
+  margin-top: 35px;
+  font-weight: normal;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  width: 90%;
+}
+
+.form-group form {
+  width: 60%;
+  margin-top: 17px;
+  max-height: 51vh;
+  overflow-y: scroll;
+}
+
+.form-group form::-webkit-scrollbar {
+  display: none;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group:first-child {
+  margin-top: 25px;
+}
+
+.input-group:not(:first-child) label {
+  margin-top: 30px;
+}
+
+.input-group input {
+  border: none;
+  border-bottom: solid 2px;
+  font-size: 1.2rem;
+  line-height: 30px;
+  margin-top: 3px;
+}
+
+.input-group input:focus {
+  appearance: none;
+  outline: none;
+}
+
+.input-group:not(:first-child) {
+  height: 0px;
+  transform: scale(0);
+}
